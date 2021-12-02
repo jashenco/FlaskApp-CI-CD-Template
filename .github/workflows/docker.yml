@@ -23,4 +23,4 @@ jobs:
       # Runs a single command using the runners shell
       - name: Build image
         run: |
-          docker build -t jaspervangent/flask-app:latest
+          docker build -t jaspervangent/flask-app:latest .
