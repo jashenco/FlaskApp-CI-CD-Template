@@ -1,4 +1,9 @@
-FROM python:3.9.1
-ADD . /python-flask
-WORKDIR /python-flask
-RUN pip install -r requirements.txt
+FROM python:3.9.1-alpine
+
+WORKDIR /flask-app
+
+ADD . /flask-app
+
+RUN pip3 install -r requirements.txt
+
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
