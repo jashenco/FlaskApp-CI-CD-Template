@@ -31,3 +31,7 @@ jobs:
       - name: Build image
         run: |
           docker build -t jaspervangent/flask-app:latest .
+          
+      - name: docker push
+        run: |
+          docker push jaspervangent/flask-app:latest
