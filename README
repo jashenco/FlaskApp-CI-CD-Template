@@ -2,11 +2,16 @@ This repository is a simple template for a complete CI/CD pipeline for a Flask a
 
 Steps to take:
 
+Implementing CI
+
 1. Copy the Github repository
 2. Make new Docker Hub repository
 3. Edit .github/workflows/docker.yml file
   - Change / add docker secrets to Github in Settings -> Secrets and make them correspond with env fieldnames in de docker.yml file
   - Change 'docker-username/docker-repository:tag' for Build and Push steps
+  
+Implementing CD
+
 4. On the server where your docker container is going to run, install TowerWatch with the following command:
 
   docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --interval 60
