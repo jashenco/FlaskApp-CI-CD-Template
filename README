@@ -1,6 +1,7 @@
-This repository is a simple template for a complete CI/CD pipeline for a Flask application.
+This repository is a simple template for a complete CI/CD pipeline for a Flask application. Enjoy :)
 
 Steps to take:
+
 1. Copy the Github repository
 2. Make new Docker Hub repository
 3. Edit .github/workflows/docker.yml file
