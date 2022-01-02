@@ -13,6 +13,7 @@ Implementing CI
 Implementing CD
 
 4. On the server where your docker container is going to run, install TowerWatch with the following command:
+(EDIT: First initiate the containers that you want to be auto refreshed)
 
   docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --interval 60
   
